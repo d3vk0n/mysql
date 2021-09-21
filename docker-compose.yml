@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mysql:
+    build: ./mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 291091
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:
