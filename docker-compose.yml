@@ -1,6 +1,8 @@
 version: '3'
 services:
   mysql:
+    ports:
+      -3357:3306
     build: ./mysql
     environment:
       MYSQL_ROOT_PASSWORD: 291091
